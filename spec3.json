@@ -796,34 +796,22 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "allOf": [
-                                    {
-                                        "$ref": "#/components/schemas/Pagination"
-                                    },
-                                    {
-                                        "type": "object",
-                                        "properties": {
-                                            "id": {
-                                                "type": "string",
-                                                "description": "Identifier for the collection",
-                                                "format": "uuid"
-                                            },
-                                            "query": {
-                                                "type": "string",
-                                                "description": "Filter memberships by user names",
-                                                "example": "jenny"
-                                            },
-                                            "permission": {
-                                                "$ref": "#/components/schemas/Permission"
-                                            }
-                                        },
-                                        "required": [
-                                            "id"
-                                        ]
-                                    }
-                                ],
                                 "type": "object",
-                                "properties": {}
+                                "properties": {
+                                    "id": {
+                                        "type": "string",
+                                        "description": "Identifier for the collection",
+                                        "format": "uuid"
+                                    },
+                                    "query": {
+                                        "type": "string",
+                                        "description": "Filter memberships by user names",
+                                        "example": "jenny"
+                                    },
+                                    "permission": {
+                                        "$ref": "#/components/schemas/Permission"
+                                    }
+                                }
                             }
                         }
                     }
@@ -1022,34 +1010,22 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "allOf": [
-                                    {
-                                        "$ref": "#/components/schemas/Pagination"
-                                    },
-                                    {
-                                        "type": "object",
-                                        "properties": {
-                                            "id": {
-                                                "type": "string",
-                                                "description": "Identifier for the collection",
-                                                "format": "uuid"
-                                            },
-                                            "query": {
-                                                "type": "string",
-                                                "description": "Filter memberships by group names",
-                                                "example": "developers"
-                                            },
-                                            "permission": {
-                                                "$ref": "#/components/schemas/Permission"
-                                            }
-                                        },
-                                        "required": [
-                                            "id"
-                                        ]
-                                    }
-                                ],
                                 "type": "object",
-                                "properties": {}
+                                "properties": {
+                                    "id": {
+                                        "type": "string",
+                                        "description": "Identifier for the collection",
+                                        "format": "uuid"
+                                    },
+                                    "query": {
+                                        "type": "string",
+                                        "description": "Filter memberships by group names",
+                                        "example": "developers"
+                                    },
+                                    "permission": {
+                                        "$ref": "#/components/schemas/Permission"
+                                    }
+                                }
                             }
                         }
                     }
@@ -1470,42 +1446,30 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "allOf": [
-                                    {
-                                        "$ref": "#/components/schemas/Pagination"
-                                    },
-                                    {
-                                        "$ref": "#/components/schemas/Sorting"
-                                    },
-                                    {
-                                        "type": "object",
-                                        "properties": {
-                                            "collectionId": {
-                                                "type": "string",
-                                                "format": "uuid",
-                                                "description": "Optionally filter to a specific collection"
-                                            },
-                                            "userId": {
-                                                "type": "string",
-                                                "format": "uuid"
-                                            },
-                                            "backlinkDocumentId": {
-                                                "type": "string",
-                                                "format": "uuid"
-                                            },
-                                            "parentDocumentId": {
-                                                "type": "string",
-                                                "format": "uuid"
-                                            },
-                                            "template": {
-                                                "type": "boolean",
-                                                "description": "Optionally filter to only templates"
-                                            }
-                                        }
-                                    }
-                                ],
                                 "type": "object",
-                                "properties": {}
+                                "properties": {
+                                    "collectionId": {
+                                        "type": "string",
+                                        "format": "uuid",
+                                        "description": "Optionally filter to a specific collection"
+                                    },
+                                    "userId": {
+                                        "type": "string",
+                                        "format": "uuid"
+                                    },
+                                    "backlinkDocumentId": {
+                                        "type": "string",
+                                        "format": "uuid"
+                                    },
+                                    "parentDocumentId": {
+                                        "type": "string",
+                                        "format": "uuid"
+                                    },
+                                    "template": {
+                                        "type": "boolean",
+                                        "description": "Optionally filter to only templates"
+                                    }
+                                }
                             }
                         }
                     }
@@ -1559,37 +1523,25 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "allOf": [
-                                    {
-                                        "$ref": "#/components/schemas/Pagination"
-                                    },
-                                    {
-                                        "$ref": "#/components/schemas/Sorting"
-                                    },
-                                    {
-                                        "type": "object",
-                                        "properties": {
-                                            "collectionId": {
-                                                "type": "string",
-                                                "description": "A collection to search within",
-                                                "format": "uuid"
-                                            },
-                                            "dateFilter": {
-                                                "type": "string",
-                                                "description": "Any documents that have not been updated within the specified period will be filtered out",
-                                                "example": "month",
-                                                "enum": [
-                                                    "day",
-                                                    "week",
-                                                    "month",
-                                                    "year"
-                                                ]
-                                            }
-                                        }
-                                    }
-                                ],
                                 "type": "object",
-                                "properties": {}
+                                "properties": {
+                                    "collectionId": {
+                                        "type": "string",
+                                        "description": "A collection to search within",
+                                        "format": "uuid"
+                                    },
+                                    "dateFilter": {
+                                        "type": "string",
+                                        "description": "Any documents that have not been updated within the specified period will be filtered out",
+                                        "example": "month",
+                                        "enum": [
+                                            "day",
+                                            "week",
+                                            "month",
+                                            "year"
+                                        ]
+                                    }
+                                }
                             }
                         }
                     }
@@ -1643,14 +1595,6 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "allOf": [
-                                    {
-                                        "$ref": "#/components/schemas/Pagination"
-                                    },
-                                    {
-                                        "$ref": "#/components/schemas/Sorting"
-                                    }
-                                ],
                                 "type": "object",
                                 "properties": {}
                             }
@@ -1706,49 +1650,40 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "allOf": [
-                                    {
-                                        "$ref": "#/components/schemas/Pagination"
-                                    },
-                                    {
-                                        "type": "object",
-                                        "properties": {
-                                            "query": {
-                                                "type": "string",
-                                                "example": "hiring"
-                                            },
-                                            "userId": {
-                                                "type": "string",
-                                                "description": "Any documents that have not been edited by the user identifier will be filtered out",
-                                                "format": "uuid"
-                                            },
-                                            "collectionId": {
-                                                "type": "string",
-                                                "description": "A collection to search within",
-                                                "format": "uuid"
-                                            },
-                                            "includeArchived": {
-                                                "type": "boolean"
-                                            },
-                                            "includeDrafts": {
-                                                "type": "boolean"
-                                            },
-                                            "dateFilter": {
-                                                "type": "string",
-                                                "description": "Any documents that have not been updated within the specified period will be filtered out",
-                                                "example": "month",
-                                                "enum": [
-                                                    "day",
-                                                    "week",
-                                                    "month",
-                                                    "year"
-                                                ]
-                                            }
-                                        }
-                                    }
-                                ],
                                 "type": "object",
-                                "properties": {}
+                                "properties": {
+                                    "query": {
+                                        "type": "string",
+                                        "example": "hiring"
+                                    },
+                                    "userId": {
+                                        "type": "string",
+                                        "description": "Any documents that have not been edited by the user identifier will be filtered out",
+                                        "format": "uuid"
+                                    },
+                                    "collectionId": {
+                                        "type": "string",
+                                        "description": "A collection to search within",
+                                        "format": "uuid"
+                                    },
+                                    "includeArchived": {
+                                        "type": "boolean"
+                                    },
+                                    "includeDrafts": {
+                                        "type": "boolean"
+                                    },
+                                    "dateFilter": {
+                                        "type": "string",
+                                        "description": "Any documents that have not been updated within the specified period will be filtered out",
+                                        "example": "month",
+                                        "enum": [
+                                            "day",
+                                            "week",
+                                            "month",
+                                            "year"
+                                        ]
+                                    }
+                                }
                             }
                         }
                     }
@@ -2512,44 +2447,32 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "allOf": [
-                                    {
-                                        "$ref": "#/components/schemas/Pagination"
-                                    },
-                                    {
-                                        "$ref": "#/components/schemas/Sorting"
-                                    },
-                                    {
-                                        "type": "object",
-                                        "properties": {
-                                            "name": {
-                                                "type": "string",
-                                                "description": "Filter to a specific event, e.g. \"collections.create\". Event names are in the format \"objects.verb\""
-                                            },
-                                            "actorId": {
-                                                "type": "string",
-                                                "format": "uuid",
-                                                "description": "Filter to events performed by the selected user"
-                                            },
-                                            "documentId": {
-                                                "type": "string",
-                                                "format": "uuid",
-                                                "description": "Filter to events performed in the selected document"
-                                            },
-                                            "collectionId": {
-                                                "type": "string",
-                                                "format": "uuid",
-                                                "description": "Filter to events performed in the selected collection"
-                                            },
-                                            "auditLog": {
-                                                "type": "boolean",
-                                                "description": "Whether to return detailed events suitable for an audit log. Without this flag less detailed event types will be returned."
-                                            }
-                                        }
-                                    }
-                                ],
                                 "type": "object",
-                                "properties": {}
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "description": "Filter to a specific event, e.g. \"collections.create\". Event names are in the format \"objects.verb\""
+                                    },
+                                    "actorId": {
+                                        "type": "string",
+                                        "format": "uuid",
+                                        "description": "Filter to events performed by the selected user"
+                                    },
+                                    "documentId": {
+                                        "type": "string",
+                                        "format": "uuid",
+                                        "description": "Filter to events performed in the selected document"
+                                    },
+                                    "collectionId": {
+                                        "type": "string",
+                                        "format": "uuid",
+                                        "description": "Filter to events performed in the selected collection"
+                                    },
+                                    "auditLog": {
+                                        "type": "boolean",
+                                        "description": "Whether to return detailed events suitable for an audit log. Without this flag less detailed event types will be returned."
+                                    }
+                                }
                             }
                         }
                     }
@@ -2701,33 +2624,18 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "allOf": [
-                                    {
-                                        "$ref": "#/components/schemas/Pagination"
-                                    },
-                                    {
-                                        "$ref": "#/components/schemas/Sorting"
-                                    },
-                                    {
-                                        "type": "object",
-                                        "properties": {
-                                            "type": {
-                                                "type": "string",
-                                                "description": "The type of fileOperation",
-                                                "example": "export",
-                                                "enum": [
-                                                    "export",
-                                                    "import"
-                                                ]
-                                            }
-                                        },
-                                        "required": [
-                                            "type"
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string",
+                                        "description": "The type of fileOperation",
+                                        "example": "export",
+                                        "enum": [
+                                            "export",
+                                            "import"
                                         ]
                                     }
-                                ],
-                                "type": "object",
-                                "properties": {}
+                                }
                             }
                         }
                     }
@@ -2828,14 +2736,6 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "allOf": [
-                                    {
-                                        "$ref": "#/components/schemas/Pagination"
-                                    },
-                                    {
-                                        "$ref": "#/components/schemas/Sorting"
-                                    }
-                                ],
                                 "type": "object",
                                 "properties": {}
                             }
@@ -3069,31 +2969,19 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "allOf": [
-                                    {
-                                        "$ref": "#/components/schemas/Pagination"
-                                    },
-                                    {
-                                        "type": "object",
-                                        "properties": {
-                                            "id": {
-                                                "type": "string",
-                                                "description": "Groupd id",
-                                                "example": "a32c2ee6-fbde-4654-841b-0eabdc71b812"
-                                            },
-                                            "query": {
-                                                "type": "string",
-                                                "description": "Filter memberships by user names",
-                                                "example": "jenny"
-                                            }
-                                        },
-                                        "required": [
-                                            "id"
-                                        ]
-                                    }
-                                ],
                                 "type": "object",
-                                "properties": {}
+                                "properties": {
+                                    "id": {
+                                        "type": "string",
+                                        "description": "Groupd id",
+                                        "example": "a32c2ee6-fbde-4654-841b-0eabdc71b812"
+                                    },
+                                    "query": {
+                                        "type": "string",
+                                        "description": "Filter memberships by user names",
+                                        "example": "jenny"
+                                    }
+                                }
                             }
                         }
                     }
@@ -3361,14 +3249,6 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "allOf": [
-                                    {
-                                        "$ref": "#/components/schemas/Pagination"
-                                    },
-                                    {
-                                        "$ref": "#/components/schemas/Sorting"
-                                    }
-                                ],
                                 "type": "object",
                                 "properties": {}
                             }
@@ -3473,14 +3353,6 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "allOf": [
-                                    {
-                                        "$ref": "#/components/schemas/Pagination"
-                                    },
-                                    {
-                                        "$ref": "#/components/schemas/Sorting"
-                                    }
-                                ],
                                 "type": "object",
                                 "properties": {}
                             }
@@ -3815,48 +3687,36 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "allOf": [
-                                    {
-                                        "$ref": "#/components/schemas/Pagination"
-                                    },
-                                    {
-                                        "$ref": "#/components/schemas/Sorting"
-                                    },
-                                    {
-                                        "type": "object",
-                                        "properties": {
-                                            "query": {
-                                                "type": "string",
-                                                "example": "jane"
-                                            },
-                                            "emails": {
-                                                "type": "array",
-                                                "items": {
-                                                    "type": "string",
-                                                    "description": "Array of emails",
-                                                    "example": [
-                                                        "jane.crandall@mail.com",
-                                                        "prudence.crandall@mail.com"
-                                                    ]
-                                                }
-                                            },
-                                            "filter": {
-                                                "type": "string",
-                                                "example": "all",
-                                                "enum": [
-                                                    "invited",
-                                                    "viewers",
-                                                    "admins",
-                                                    "active",
-                                                    "all",
-                                                    "suspended"
-                                                ]
-                                            }
-                                        }
-                                    }
-                                ],
                                 "type": "object",
-                                "properties": {}
+                                "properties": {
+                                    "query": {
+                                        "type": "string",
+                                        "example": "jane"
+                                    },
+                                    "emails": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string",
+                                            "description": "Array of emails",
+                                            "example": [
+                                                "jane.crandall@mail.com",
+                                                "prudence.crandall@mail.com"
+                                            ]
+                                        }
+                                    },
+                                    "filter": {
+                                        "type": "string",
+                                        "example": "all",
+                                        "enum": [
+                                            "invited",
+                                            "viewers",
+                                            "admins",
+                                            "active",
+                                            "all",
+                                            "suspended"
+                                        ]
+                                    }
+                                }
                             }
                         }
                     }
