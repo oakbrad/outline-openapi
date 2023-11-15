@@ -452,7 +452,9 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "#/components/schemas/Pagination"
+                                "$ref": "#/components/schemas/Pagination",
+                                "type": "object",
+                                "properties": {}
                             }
                         }
                     }
@@ -819,7 +821,9 @@
                                             "id"
                                         ]
                                     }
-                                ]
+                                ],
+                                "type": "object",
+                                "properties": {}
                             }
                         }
                     }
@@ -1043,7 +1047,9 @@
                                             "id"
                                         ]
                                     }
-                                ]
+                                ],
+                                "type": "object",
+                                "properties": {}
                             }
                         }
                     }
@@ -1364,6 +1370,12 @@
                                     }
                                 }
                             }
+                        },
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {}
+                            }
                         }
                     }
                 },
@@ -1491,7 +1503,9 @@
                                             }
                                         }
                                     }
-                                ]
+                                ],
+                                "type": "object",
+                                "properties": {}
                             }
                         }
                     }
@@ -1573,7 +1587,9 @@
                                             }
                                         }
                                     }
-                                ]
+                                ],
+                                "type": "object",
+                                "properties": {}
                             }
                         }
                     }
@@ -1634,7 +1650,9 @@
                                     {
                                         "$ref": "#/components/schemas/Sorting"
                                     }
-                                ]
+                                ],
+                                "type": "object",
+                                "properties": {}
                             }
                         }
                     }
@@ -1728,7 +1746,9 @@
                                             }
                                         }
                                     }
-                                ]
+                                ],
+                                "type": "object",
+                                "properties": {}
                             }
                         }
                     }
@@ -2527,7 +2547,9 @@
                                             }
                                         }
                                     }
-                                ]
+                                ],
+                                "type": "object",
+                                "properties": {}
                             }
                         }
                     }
@@ -2703,7 +2725,9 @@
                                             "type"
                                         ]
                                     }
-                                ]
+                                ],
+                                "type": "object",
+                                "properties": {}
                             }
                         }
                     }
@@ -2811,7 +2835,9 @@
                                     {
                                         "$ref": "#/components/schemas/Sorting"
                                     }
-                                ]
+                                ],
+                                "type": "object",
+                                "properties": {}
                             }
                         }
                     }
@@ -3065,7 +3091,9 @@
                                             "id"
                                         ]
                                     }
-                                ]
+                                ],
+                                "type": "object",
+                                "properties": {}
                             }
                         }
                     }
@@ -3340,7 +3368,9 @@
                                     {
                                         "$ref": "#/components/schemas/Sorting"
                                     }
-                                ]
+                                ],
+                                "type": "object",
+                                "properties": {}
                             }
                         }
                     }
@@ -3450,7 +3480,9 @@
                                     {
                                         "$ref": "#/components/schemas/Sorting"
                                     }
-                                ]
+                                ],
+                                "type": "object",
+                                "properties": {}
                             }
                         }
                     }
@@ -3822,7 +3854,9 @@
                                             }
                                         }
                                     }
-                                ]
+                                ],
+                                "type": "object",
+                                "properties": {}
                             }
                         }
                     }
