@@ -147,7 +147,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_attachments.create"
+                "operationId": "post_attachments_create"
             }
         },
         "/attachments.redirect": {
@@ -181,7 +181,7 @@
                         "description": "The url for the attachment"
                     }
                 },
-                "operationId": "post_attachments.redirect"
+                "operationId": "post_attachments_redirect"
             }
         },
         "/attachments.delete": {
@@ -240,7 +240,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_attachments.delete"
+                "operationId": "post_attachments_delete"
             }
         },
         "/auth.info": {
@@ -270,7 +270,7 @@
                         "$ref": "#/components/responses/Unauthenticated"
                     }
                 },
-                "operationId": "post_auth.info"
+                "operationId": "post_auth_info"
             }
         },
         "/auth.config": {
@@ -327,7 +327,7 @@
                         }
                     }
                 },
-                "operationId": "post_auth.config"
+                "operationId": "post_auth_config"
             }
         },
         "/collections.info": {
@@ -381,7 +381,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_collections.info"
+                "operationId": "post_collections_info"
             }
         },
         "/collections.documents": {
@@ -439,7 +439,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_collections.documents"
+                "operationId": "post_collections_documents"
             }
         },
         "/collections.list": {
@@ -486,7 +486,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_collections.list"
+                "operationId": "post_collections_list"
             }
         },
         "/collections.create": {
@@ -560,7 +560,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_collections.create"
+                "operationId": "post_collections_create"
             }
         },
         "/collections.update": {
@@ -637,7 +637,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_collections.update"
+                "operationId": "post_collections_update"
             }
         },
         "/collections.add_user": {
@@ -716,7 +716,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_collections.add_user"
+                "operationId": "post_collections_add_user"
             }
         },
         "/collections.remove_user": {
@@ -780,7 +780,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_collections.remove_user"
+                "operationId": "post_collections_remove_user"
             }
         },
         "/collections.memberships": {
@@ -867,7 +867,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_collections.memberships"
+                "operationId": "post_collections_memberships"
             }
         },
         "/collections.add_group": {
@@ -940,7 +940,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_collections.add_group"
+                "operationId": "post_collections_add_group"
             }
         },
         "/collections.remove_group": {
@@ -1004,7 +1004,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_collections.remove_group"
+                "operationId": "post_collections_remove_group"
             }
         },
         "/collections.group_memberships": {
@@ -1091,7 +1091,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_collections.group_memberships"
+                "operationId": "post_collections_group_memberships"
             }
         },
         "/collections.delete": {
@@ -1146,7 +1146,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_collections.delete"
+                "operationId": "post_collections_delete"
             }
         },
         "/collections.export": {
@@ -1213,7 +1213,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_collections.export"
+                "operationId": "post_collections_export"
             }
         },
         "/collections.export_all": {
@@ -1273,7 +1273,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_collections.export_all"
+                "operationId": "post_collections_export_all"
             }
         },
         "/documents.info": {
@@ -1328,7 +1328,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_documents.info"
+                "operationId": "post_documents_info"
             }
         },
         "/documents.import": {
@@ -1393,7 +1393,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_documents.import"
+                "operationId": "post_documents_import"
             }
         },
         "/documents.export": {
@@ -1444,7 +1444,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_documents.export"
+                "operationId": "post_documents_export"
             }
         },
         "/documents.list": {
@@ -1531,7 +1531,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_documents.list"
+                "operationId": "post_documents_list"
             }
         },
         "/documents.drafts": {
@@ -1613,7 +1613,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_documents.drafts"
+                "operationId": "post_documents_drafts"
             }
         },
         "/documents.viewed": {
@@ -1674,7 +1674,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_documents.viewed"
+                "operationId": "post_documents_viewed"
             }
         },
         "/documents.search": {
@@ -1784,7 +1784,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_documents.search"
+                "operationId": "post_documents_search"
             }
         },
         "/documents.create": {
@@ -1870,7 +1870,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_documents.create"
+                "operationId": "post_documents_create"
             }
         },
         "/documents.update": {
@@ -1955,7 +1955,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_documents.update"
+                "operationId": "post_documents_update"
             }
         },
         "/documents.templatize": {
@@ -2015,7 +2015,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_documents.templatize"
+                "operationId": "post_documents_templatize"
             }
         },
         "/documents.star": {
@@ -2073,7 +2073,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_documents.star"
+                "operationId": "post_documents_star"
             }
         },
         "/documents.unstar": {
@@ -2131,7 +2131,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_documents.unstar"
+                "operationId": "post_documents_unstar"
             }
         },
         "/documents.unpublish": {
@@ -2195,7 +2195,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_documents.unpublish"
+                "operationId": "post_documents_unpublish"
             }
         },
         "/documents.move": {
@@ -2281,7 +2281,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_documents.move"
+                "operationId": "post_documents_move"
             }
         },
         "/documents.archive": {
@@ -2345,7 +2345,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_documents.archive"
+                "operationId": "post_documents_archive"
             }
         },
         "/documents.restore": {
@@ -2414,7 +2414,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_documents.restore"
+                "operationId": "post_documents_restore"
             }
         },
         "/documents.delete": {
@@ -2478,7 +2478,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_documents.delete"
+                "operationId": "post_documents_delete"
             }
         },
         "/events.list": {
@@ -2561,7 +2561,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_events.list"
+                "operationId": "post_events_list"
             }
         },
         "/fileOperations.info": {
@@ -2615,7 +2615,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_fileOperations.info"
+                "operationId": "post_fileOperations_info"
             }
         },
         "/fileOperations.redirect": {
@@ -2666,7 +2666,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_fileOperations.redirect"
+                "operationId": "post_fileOperations_redirect"
             }
         },
         "/fileOperations.list": {
@@ -2737,7 +2737,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_fileOperations.list"
+                "operationId": "post_fileOperations_list"
             }
         },
         "/groups.info": {
@@ -2791,7 +2791,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_groups.info"
+                "operationId": "post_groups_info"
             }
         },
         "/groups.list": {
@@ -2845,7 +2845,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_groups.list"
+                "operationId": "post_groups_list"
             }
         },
         "/groups.create": {
@@ -2904,7 +2904,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_groups.create"
+                "operationId": "post_groups_create"
             }
         },
         "/groups.update": {
@@ -2971,7 +2971,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_groups.update"
+                "operationId": "post_groups_update"
             }
         },
         "/groups.delete": {
@@ -3029,7 +3029,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_groups.delete"
+                "operationId": "post_groups_delete"
             }
         },
         "/groups.memberships": {
@@ -3113,7 +3113,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_groups.memberships"
+                "operationId": "post_groups_memberships"
             }
         },
         "/groups.add_user": {
@@ -3195,7 +3195,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_groups.add_user"
+                "operationId": "post_groups_add_user"
             }
         },
         "/groups.remove_user": {
@@ -3266,7 +3266,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_groups.remove_user"
+                "operationId": "post_groups_remove_user"
             }
         },
         "/revisions.info": {
@@ -3320,7 +3320,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_revisions.info"
+                "operationId": "post_revisions_info"
             }
         },
         "/revisions.list": {
@@ -3374,7 +3374,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_revisions.list"
+                "operationId": "post_revisions_list"
             }
         },
         "/shares.info": {
@@ -3430,7 +3430,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_shares.info"
+                "operationId": "post_shares_info"
             }
         },
         "/shares.list": {
@@ -3484,7 +3484,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_shares.list"
+                "operationId": "post_shares_list"
             }
         },
         "/shares.create": {
@@ -3538,7 +3538,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_shares.create"
+                "operationId": "post_shares_create"
             }
         },
         "/shares.update": {
@@ -3596,7 +3596,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_shares.update"
+                "operationId": "post_shares_update"
             }
         },
         "/shares.revoke": {
@@ -3654,7 +3654,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_shares.revoke"
+                "operationId": "post_shares_revoke"
             }
         },
         "/users.invite": {
@@ -3715,7 +3715,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_users.invite"
+                "operationId": "post_users_invite"
             }
         },
         "/users.info": {
@@ -3769,7 +3769,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_users.info"
+                "operationId": "post_users_info"
             }
         },
         "/users.list": {
@@ -3856,7 +3856,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_users.list"
+                "operationId": "post_users_list"
             }
         },
         "/users.update": {
@@ -3910,7 +3910,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_users.update"
+                "operationId": "post_users_update"
             }
         },
         "/users.promote": {
@@ -3965,7 +3965,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_users.promote"
+                "operationId": "post_users_promote"
             }
         },
         "/users.demote": {
@@ -4028,7 +4028,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_users.demote"
+                "operationId": "post_users_demote"
             }
         },
         "/users.suspend": {
@@ -4083,7 +4083,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_users.suspend"
+                "operationId": "post_users_suspend"
             }
         },
         "/users.activate": {
@@ -4138,7 +4138,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_users.activate"
+                "operationId": "post_users_activate"
             }
         },
         "/users.delete": {
@@ -4194,7 +4194,7 @@
                         "$ref": "#/components/responses/NotFound"
                     }
                 },
-                "operationId": "post_users.delete"
+                "operationId": "post_users_delete"
             }
         },
         "/views.list": {
@@ -4248,7 +4248,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_views.list"
+                "operationId": "post_views_list"
             }
         },
         "/views.create": {
@@ -4299,7 +4299,7 @@
                         "$ref": "#/components/responses/Unauthorized"
                     }
                 },
-                "operationId": "post_views.create"
+                "operationId": "post_views_create"
             }
         }
     },
